@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>All html tags & some attributes</title>
+</head>
+<body>
+  <!-- This is a comment -->
+
+  <!-- Basic HTML -->
+  <h1>Basic HTML</h1>
+  <!-- <h1> to <h6> Define HTML headings -->
+  <h1>h1 to h6 tags define HTML headings</h1>
+  <h1>h1 heading</h1>
+  <h2>h2 heading</h2>
+  <h3>h3 heading</h3>
+  <h4>h4 heading</h4>
+  <h5>h5 heading</h5>
+  <h6>h6 heading</h6>
+
+  <!-- The <hr> tag defines a thematic change in the content. -->
+  <hr>
+
+  <!-- The <p> tag defines a paragraph -->
+  <p>This is a paragraph. Below is another paragraph.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis asperiores aut sunt soluta qui minus et provident, alias voluptatem iste illo obcaecati odio, officia est dolore esse deleniti illum. Perspiciatis placeat et sit inventore dicta impedit suscipit aperiam dolorem vel cumque, voluptas iusto doloribus sapiente cum, in nobis ducimus fuga modi numquam architecto consectetur aliquid eveniet at. Enim veniam explicabo officiis in odit voluptate, ex deleniti, cupiditate pariatur necessitatibus eius natus accusamus sit. Officiis obcaecati quibusdam, distinctio maiores. Unde consequatur, amet cumque sint soluta quas rem minus, inventore neque explicabo sunt placeat, itaque doloribus suscipit quis delectus obcaecati facere.</p>
+
+  <hr>
+
+  <!-- The <br> tag defines a line break -->
+  <br>
+
+  <!-- The <abbr> tag defines an abbreviation or an acronym -->
+  This is an <abbr title="Hypertext Markup Language">HTML</abbr> abbreviation.
+
+  <hr>
+
+  <!-- The <address> tag defines contact information for the author/owner of a document.
+  It is typically included along with other information in a <footer> element. -->
+  <h2>address tag</h2>
+  <address>
+    Written by <a href="mailto:nancymits@hotmail.com">NancyM</a>. <br>
+    Visit us on <a href="#">Twitter</a>. <br>
+  </address>
+  <hr>
+
+  <!-- The <b> tag defines bold text-->
+  <h2>The b tag defines bold text</h2>
+  <p>The characters are <b>bold</b>.</p>
+
+  <!-- The <em> tag defines emphasized text -->
+  <h2>The em tag defines emphasized text</h2>
+  <p>The characters are <em>emphasized</em>.</p>
+
+  <!-- The <i> tag defines a part of text in an alternate voice or mood -->
+  <h2>The i tag defines a part of text in an alternate voice or mood</h2>
+  <p><i>The text needs to have an alternate voice or mood.</i></p>
+  <hr>
+
+  <!-- The <bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it -->
+  <h2>The bdi tag isolates a part of text that might be formatted in a different direction from other text outside it</h2>
+  <p>
+    In the example below, usernames are shown along with the number of points in a contest.
+    If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points"). (<a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_bdi">Source</a>)
+  </p>
+  <ul>
+   <li>User <bdi>hrefs</bdi>: 60 points</li>
+   <li>User <bdi>jdoe</bdi>: 80 points</li>
+   <li>User <bdi>إيان</bdi>: 90 points</li>
+  </ul>
+  <hr>
+
+  <!-- The <bdo> tag overrides the current text direction
+  dir = "ltr" or "rtl"
+  -->
+  <h2>The bdo tag overrides the current text direction</h2>
+  <p>Left-to-right, no bdo.</p>
+  <p><bdo dir="rtl">Right-to-left, with bdo.</bdo></p>
+  <hr>
+
+  <!-- The <blockquote> tag defines a section that is quoted from another source -->
+  <h2>The blockquote tag defines a section that is quoted from another source</h2>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+  For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally. (<a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_blockquote_test">Source</a>)
+  </blockquote>
+  <hr>
+
+  <!-- The <cite> tag defines the title of a work -->
+  <h2>The cite tag defines the title of a work</h2>
+  <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+  <hr>
+
+  <!-- The <code> tag defines a piece of computer code -->
+  <h2>The code tag defines a piece of computer code</h2>
+  <p><code>print("Hello, world!")</code></p>
+  <hr>
+
+  <!-- The <del> tag defines text that had been deleted from a document -->
+  <h2>The del tag defines text that had been deleted from a document</h2>
+  <p>I would like to buy <del>rice</del> potatoes.</p>
+  <hr>
+
+  <!-- The <dnf> tag represents the defining instance of a term
+  By using the title attribute we create a pop up cloud with the meaning of the term
+  -->
+  <h2>The dnf tag represents the defining instance of a term</h2>
+  <p><dfn title="Hypertext Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p>
+  <hr>
+
+
+
+
+  <!-- The <a> tag defines a hyperlink
+      -> hreflang = "en", language_code, specifies the language of the linked document.
+    -->
+  <a href="https://twitter.com/home" hreflang="en" target="_blank">Twitter!</a>
+
+
+  <!-- The <area> tag defines and area inside an image-map -->
+  <img src="camera.jpg" alt="camera" usemap="#cameramap">
+
+  <map name="cameramap">
+    <area shape="rect" coords="428,579,240,431" href="camera_close_up.jpg" alt="camera" target="_blank">
+  </map>
+
+
+
+</body>
+</html>
